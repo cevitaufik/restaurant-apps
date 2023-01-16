@@ -1,0 +1,124 @@
+:root {
+  --color-primary: #0A2647;
+  --color-secondary: #144272;
+  --color-tertiary: #205295;
+  --color-accent: #f4de1a;
+  --color-white: #E3F6FF;
+}
+
+@font-face {
+  font-family: body;
+  src: url('./../font/BreeSerif-Regular.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: body;
+}
+
+/* ------ navbar start ------ */
+
+.navbar {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-primary);
+  z-index: 100;
+}
+
+.navbar-container {
+  display: grid;
+  grid-template-columns: 5fr 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 20px 30px;
+}
+
+.navbar-container .navbar-brand {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.navbar-container a {
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.navbar-container .nav-link {
+  margin: auto;
+}
+
+.navbar-container a:hover {
+  color: var(--color-accent);
+}
+
+/* ------ navbar end ------ */
+
+
+/* ------ hero start ------ */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+}
+
+.hero .hero-text {
+  position: absolute;
+  top: 35vh;
+  width: 100%;
+  color: var(--color-white);
+  text-shadow: 0.01em 0.01em 1em #000000;
+}
+
+.hero .hero-text h1 {
+  width: 100%;
+  font-size: 20vh;
+  text-align: center;
+}
+
+.hero .hero-text div {
+  width: 100%;
+  font-size: 5vh;
+  text-align: center;
+  margin-top: -1em;
+  color: var(--color-accent);
+  text-shadow: 0.08em 0.08em 0.2em #000000;
+}
+
+/* ------ hero end ------ */
+
+
+/* ------ content start ------ */
+.content {
+  position: absolute;
+  top: 100vh;
+  background-color: var(--color-white);
+}
+/* ------ content end ------ */
+
+
+/* ------ utility start ------ */
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* ------ utility end ------ */
+
+body {
+  height: 5000px;
+}
