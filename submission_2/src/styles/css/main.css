@@ -159,7 +159,7 @@ article img {
   object-fit: cover;
 }
 
-.content .d-grid {
+#content .d-grid {
   gap: 8vh;
 }
 
@@ -275,6 +275,14 @@ a {
   line-height: 44px;
   font-size: 20px;
 }
+
+a.link {
+  text-decoration: none;
+}
+
+a.link:hover {
+  background-color: var(--color-accent);
+}
 /* ------ utility end ------ */
 
 /* handphone */
@@ -338,8 +346,8 @@ a {
   article h3,
   article p,
   article .rating,
-  .content h2,
-  .content p {
+  #content h2,
+  #content p {
     padding: 0 5vh;
   }
 }
@@ -369,7 +377,7 @@ a {
     grid-template-columns: 1fr 1fr;
   }
 
-  .content {
+  #content {
     padding: 0 10vh;
   }
 }
@@ -380,11 +388,11 @@ a {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  .content .d-grid {
+  #content .d-grid {
     gap: 5vh;
   }
 
-  .content {
+  #content {
     padding: 0 5vh;
   }
 }
