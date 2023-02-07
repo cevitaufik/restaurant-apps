@@ -4,13 +4,7 @@ import UrlParser from '../routes/url-parser'
 class App {
   constructor (content) {
     this._content = content
-
-    // this._initialAppShell()
   }
-
-  // _initialAppShell () {
-  //   //
-  // }
 
   async renderPage () {
     const url = UrlParser.parseActiveUrlWithCombiner()

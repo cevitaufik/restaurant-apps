@@ -17,6 +17,10 @@
   font-family: body;
 }
 
+#main {
+  min-height: 100vh;
+}
+
 /* ------ navbar start ------ */
 
 .skip-link {
@@ -93,6 +97,19 @@
 
 /* ------ navbar end ------ */
 
+/* ------ loading start ------ */
+
+.loading {
+  background-image: url('./../../public/images/loading.webp');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20vh;
+  width: 100%;
+  height: 20vh;
+}
+
+/* ------ loading end ------ */
+
 
 /* ------ hero start ------ */
 
@@ -168,6 +185,13 @@ body {
 }
 
 /* ------ content end ------ */
+
+/* ------ detail start ------ */
+#content.detail article img {
+  width: 100%;
+  height: 60vh;
+}
+/* ------ detail end ------ */
 
 /* ------ footer start ------ */
 body footer .container .flex-row div {
@@ -253,6 +277,10 @@ footer svg {
   margin-top: 10px;
 }
 
+.mt-40 {
+  margin-top: 40px;
+}
+
 .mt-5 {
   margin-top: 5px;
 }
@@ -263,6 +291,10 @@ footer svg {
 
 .mb-20 {
   margin-bottom: 20px;
+}
+
+.ms-20 {
+  margin-left: 20px;
 }
 
 .my-10 {
@@ -281,7 +313,7 @@ a.link {
 }
 
 a.link:hover {
-  background-color: var(--color-accent);
+  color: var(--color-accent);
 }
 /* ------ utility end ------ */
 
@@ -347,8 +379,17 @@ a.link:hover {
   article p,
   article .rating,
   #content h2,
+  #content h3,
+  #content h4,
+  #content a,
+  #content ul,
+  #content small,
   #content p {
     padding: 0 5vh;
+  }
+
+  .mt-sm-0 {
+    margin-top: 0;
   }
 }
 

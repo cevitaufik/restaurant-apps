@@ -10,7 +10,7 @@ document
     navbarContainer.classList.toggle('open')
   })
 
-const app = new App(document.getElementById('content'))
+const app = new App(document.getElementById('main'))
 
 window.addEventListener('hashchange', () => {
   app.renderPage()
@@ -20,23 +20,3 @@ window.addEventListener('load', () => {
   app.renderPage()
   swRegister()
 })
-
-// const baseArticle = document.querySelector('#content article')
-
-// function cloneElement (data) {
-//   const newArticle = baseArticle.cloneNode(true)
-
-//   newArticle.setAttribute('id', data.id)
-//   newArticle.querySelector('img').setAttribute('src', data.pictureId)
-//   newArticle.querySelector('img').setAttribute('alt', data.name)
-//   newArticle.querySelector('h3').innerText = data.name
-//   newArticle.querySelector('.rating #number').innerText = data.rating
-//   newArticle.querySelector('.location #city').innerText = data.city
-//   newArticle.querySelector('#description').innerText = data.description
-
-//   baseArticle.parentElement.insertAdjacentElement('afterbegin', newArticle)
-// }
-
-// data.restaurants.forEach(data => cloneElement(data))
-
-// baseArticle.remove()
