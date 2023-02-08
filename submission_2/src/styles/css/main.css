@@ -315,6 +315,23 @@ a.link {
 a.link:hover {
   color: var(--color-accent);
 }
+
+button#favorite {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+button#favorite:hover {
+  color: var(--color-accent);
+}
+
+#favorite svg {
+  height: 20px;
+}
+#favorite.fill {
+  color: red;
+}
 /* ------ utility end ------ */
 
 /* handphone */
@@ -384,6 +401,7 @@ a.link:hover {
   #content a,
   #content ul,
   #content small,
+  #content button,
   #content p {
     padding: 0 5vh;
   }
