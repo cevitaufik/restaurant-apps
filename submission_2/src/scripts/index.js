@@ -24,7 +24,8 @@ window.addEventListener('load', () => {
 document
   .getElementById('skip-link')
   .addEventListener('click', e => {
-    document
-      .getElementById('content')
-      .scrollIntoView()
+    const target = document.getElementById('content').getClientRects()
+    const navbar = document.querySelector('nav.navbar').getClientRects()
+
+    window.scroll(0, target[0].y - navbar[0].height)
   })
