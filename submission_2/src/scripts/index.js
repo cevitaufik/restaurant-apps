@@ -20,3 +20,11 @@ window.addEventListener('load', () => {
   app.renderPage()
   swRegister()
 })
+
+document
+  .getElementById('skip-link')
+  .addEventListener('click', e => {
+    document
+      .getElementById('content')
+      .scrollIntoView()
+  })

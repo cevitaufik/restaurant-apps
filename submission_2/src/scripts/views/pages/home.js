@@ -12,7 +12,6 @@ const Home = {
         </div>
       </div>
     </section>
-    <span id="maincontent"></span>
     <section class="container py-10vh">
       <div id="content">
         <h2 class="mb-20" tabindex="0">Restoran kami</h2>

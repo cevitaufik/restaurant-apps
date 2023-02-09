@@ -46,7 +46,7 @@ class Template {
   }
 
   static cta (id, sumary) {
-    return (sumary) ? `<a href="#/detail/${id}" class="link">Selengkapnya</a>` : ''
+    return (sumary) ? `<a href="#/detail/${id}" class="link"><span>Selengkapnya</span></a>` : ''
   }
 
   static menu (restaurant, sumary) {
