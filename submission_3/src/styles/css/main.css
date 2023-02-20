@@ -1,0 +1,469 @@
+:root {
+  --color-primary: #0A2647;
+  --color-secondary: #144272;
+  --color-tertiary: #205295;
+  --color-accent: #f4de1a;
+  --color-white: #E3F6FF;
+}
+
+@font-face {
+  font-family: body;
+  src: url('./../font/BreeSerif-Regular.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: body;
+}
+
+#main {
+  min-height: 100vh;
+}
+
+/* ------ navbar start ------ */
+
+#skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: var(--color-accent);
+  padding: 8px;
+  z-index: 100;
+}
+
+#skip-link:focus {
+  top: 15vh;
+}
+
+#maincontent {
+  position: absolute;
+  top: 80vh;
+}
+
+.navbar {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-primary);
+  z-index: 100;
+}
+
+.navbar-container {
+  gap: 20px;
+  padding: 20px 30px;
+}
+
+.navbar-brand {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.navbar-container a {
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.navbar-container .nav-link {
+  margin: auto;
+}
+
+.navbar-container a:hover {
+  color: var(--color-accent);
+}
+
+#menu {
+  background-color: transparent;
+  color: var(--color-white);
+  border: none;
+  height: 44px;
+  display: flex;
+  margin: 10px;
+  padding-left: 5px;
+}
+
+#menu svg {
+  height: 44px;
+  width: 44px;
+}
+
+#menu .navbar-brand {
+  font-size: 2em;
+  padding-left: 0.5em;
+  line-height: 44px;
+}
+
+/* ------ navbar end ------ */
+
+/* ------ loading start ------ */
+
+.loading {
+  background-image: url('./../../public/images/loading.webp');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20vh;
+  width: 100%;
+  height: 20vh;
+}
+
+/* ------ loading end ------ */
+
+
+/* ------ hero start ------ */
+
+.hero {
+  background-image: url('./../../public/images/heros/hero-image_4.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.hero .hero-text {
+  width: 100%;
+  color: var(--color-white);
+  text-shadow: 0.01em 0.01em 1em #000000;
+}
+
+.hero .hero-text h1 {
+  width: 100%;
+  font-size: 20vh;
+  text-align: center;
+}
+
+.hero .hero-text div {
+  width: 100%;
+  font-size: 5vh;
+  text-align: center;
+  margin-top: -1em;
+  color: var(--color-accent);
+  text-shadow: 0.08em 0.08em 0.2em #000000;
+}
+
+/* ------ hero end ------ */
+
+
+/* ------ content start ------ */
+
+article {
+  height: fit-content;
+}
+
+article .rating svg {
+  height: 0.8em;
+  color: var(--color-accent);
+}
+
+article .rating {
+  font-size: 1.1em;
+}
+
+article .location {
+  font-size: 1.1em;
+  margin: 0 0 10px 0;
+}
+
+article .location svg {
+  height: 0.8em;
+}
+
+article img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+#content .d-grid {
+  gap: 8vh;
+}
+
+body {
+  background-color: var(--color-white);
+}
+
+/* ------ content end ------ */
+
+/* ------ detail start ------ */
+#content.detail article img {
+  width: 100%;
+  height: 60vh;
+}
+/* ------ detail end ------ */
+
+/* ------ footer start ------ */
+body footer .container .flex-row div {
+  flex-grow: 1;
+}
+
+footer {
+  background-color: var(--color-tertiary);
+  width: 100%;
+}
+
+footer h2 {
+  font-size: 1.3em;
+  font-weight: 500;
+}
+
+footer svg {
+  height: 20px;
+  vertical-align: middle;
+  padding-right: 7px;
+}
+
+/* ------ footer end ------ */
+
+
+/* ------ utility start ------ */
+
+.text-white {
+  color: var(--color-white);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.container {
+  width: 100%;
+}
+
+.d-grid {
+  display: grid;
+  grid-template-columns: 4fr 4fr 4fr;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.p-10 {
+  padding: 10px;
+}
+
+.pb-10 {
+  padding-bottom: 10px;
+}
+
+.py-10 {
+  padding: 10px 0;
+}
+
+.py-10vh {
+  padding: 10vh 0;
+}
+
+.px-10 {
+  padding: 0 10px;
+}
+
+.px-5vh {
+  padding: 0 5vh;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.mt-5 {
+  margin-top: 5px;
+}
+
+.mb-5 {
+  margin-bottom: 5px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.ms-20 {
+  margin-left: 20px;
+}
+
+.my-10 {
+  margin: 10px 0;
+}
+
+a {
+  min-width: 44px;
+  min-height: 44px;
+  line-height: 44px;
+  font-size: 20px;
+}
+
+a.link {
+  text-decoration: none;
+  display: inline-block;
+}
+
+a.link:hover {
+  color: var(--color-accent);
+}
+
+button#favorite {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  min-height: 44px;
+  min-width: 44px;
+}
+
+button#favorite:hover {
+  color: var(--color-accent);
+}
+
+#favorite svg {
+  height: 20px;
+}
+#favorite.fill {
+  color: red;
+}
+/* ------ utility end ------ */
+
+/* handphone */
+@media (max-width: 767px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+  }
+
+  .navbar .navbar-container .navbar-brand {
+    display: none;
+  }
+
+  .navbar .navbar-container {
+    padding-bottom: 0;
+    position: absolute;
+    height: max-content;
+    background-color:var(--color-primary);
+    width: 100vw;
+    overflow: hidden;
+    left: -120vw;
+    transition: all 0.3s;
+  }
+
+  .navbar .navbar-container.open {
+    left: 0;
+  }
+  
+  .navbar .navbar-container .nav-link {
+    display: block;
+    width: 100%;
+    height: 3em;
+    font-size: 1.5em;
+  }
+
+  .hero .hero-text {
+    padding-left: 20px;
+    width: fit-content;
+  }
+
+  .hero .hero-text h1 {
+    padding-top: 30vh;
+    font-size: 3.5em;
+    text-align: left;
+  }
+
+  .hero .hero-text div {
+    font-size: 2em;
+    text-align: left;
+    margin-top: -0.5em;
+  }
+
+  .flex-row {
+    flex-direction: column;
+  }
+
+  .d-grid {
+    grid-template-columns: 1fr;
+  }
+
+  article h3,
+  article p,
+  article .rating,
+  #content h2,
+  #content h3,
+  #content h4,
+  #content a,
+  #content ul,
+  #content small,
+  #content button,
+  #content p {
+    padding: 0 5vh;
+  }
+
+  .mt-sm-0 {
+    margin-top: 0;
+  }
+}
+
+/* tablet */
+@media (min-width: 768px) {
+  #menu {
+    display: none;
+  }
+
+  .navbar-container {
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr 1fr;
+  }
+
+  .hero .hero-text h1 {
+    padding-top: 30vh;
+    font-size: 7em;
+  }
+
+  .hero .hero-text div {
+    font-size: 3em;
+    margin-top: -0.5em;
+  }
+
+  .d-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #content {
+    padding: 0 10vh;
+  }
+}
+
+/* desktop */
+@media (min-width: 992px) {
+  .d-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #content .d-grid {
+    gap: 5vh;
+  }
+
+  #content {
+    padding: 0 5vh;
+  }
+}
+
+/* extra besar */
+@media (min-width: 1200px) {
+  .container {
+    width: 1000px;
+    margin: auto;
+  }
+
+}
