@@ -4,7 +4,7 @@ class Template {
   static card (restaurant, sumary = true) {
     return `
     <article tabindex="0">
-      <img src="${API_ENDPOINT.SMALL_IMAGES(restaurant.pictureId)}" alt="${restaurant.name}">
+      <img class="lazyload" data-src="${API_ENDPOINT.SMALL_IMAGES(restaurant.pictureId)}" alt="${restaurant.name}">
       ${this.heading(restaurant.name, sumary)}
 
       <span class="rating mt-5 my-10">
