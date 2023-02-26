@@ -114,18 +114,23 @@
 /* ------ hero start ------ */
 
 .hero {
-  background-image: url('./../../public/images/heros/hero-image_4.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
+  position: relative;
+}
+
+.hero picture img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
 }
 
 .hero .hero-text {
   width: 100%;
   color: var(--color-white);
   text-shadow: 0.01em 0.01em 1em #000000;
+  position: absolute;
+  top: 0;
 }
 
 .hero .hero-text h1 {

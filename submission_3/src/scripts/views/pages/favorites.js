@@ -21,9 +21,13 @@ const Favorites = {
     container.classList.add('d-grid')
     container.innerHTML = ''
 
-    restaurants.forEach(restaurant => {
-      container.insertAdjacentHTML('beforeend', Template.card(restaurant, true))
-    })
+    if (restaurants.length) {
+      restaurants.forEach(restaurant => {
+        container.insertAdjacentHTML('beforeend', Template.card(restaurant, true))
+      })
+    } else {
+      container.insertAdjacentHTML('beforeend', '<div class="mt-40">Tidak ada restaurant untuk ditampilkan</div>')
+    }
   }
 }
 
