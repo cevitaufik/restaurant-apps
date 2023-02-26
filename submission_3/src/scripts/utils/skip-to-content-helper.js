@@ -6,8 +6,14 @@ const skipToContentInit = (content) => {
       const navbar = document.querySelector('nav.navbar').getClientRects()
 
       if (content.getClientRects()[0]) {
-        window.scroll(0, content.getClientRects()[0].y - navbar[0].height)
         skipLink.blur()
+        window.scroll(0, content.getClientRects()[0].y - navbar[0].height)
+
+        if (content.firstElementChild) {
+          content.firstElementChild.focus()
+        } else {
+          content.focus()
+        }
       }
     })
 }

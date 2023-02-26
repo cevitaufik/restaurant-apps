@@ -3,6 +3,7 @@ import UrlParser from '../../routes/url-parser'
 import Template from '../templates/template'
 import LikeButtonInitiator from '../../utils/like-button-initiator'
 import skipToContentInit from '../../utils/skip-to-content-helper'
+import resetPosition from '../../utils/reset-position'
 
 const Detail = {
   async render () {
@@ -38,7 +39,7 @@ const Detail = {
       }
     })
 
-    window.scroll(0, 0)
+    resetPosition()
 
     skipToContentInit(document.querySelector('article h2'))
   }

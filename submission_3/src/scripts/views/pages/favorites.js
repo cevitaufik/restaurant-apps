@@ -1,4 +1,5 @@
 import FavoriteIdb from '../../data/favorite-idb'
+import resetPosition from '../../utils/reset-position'
 import skipToContentInit from '../../utils/skip-to-content-helper'
 import Template from '../templates/template'
 
@@ -33,7 +34,7 @@ const Favorites = {
       container.insertAdjacentHTML('beforeend', '<div class="mt-40">Tidak ada restaurant untuk ditampilkan</div>')
     }
 
-    window.scroll(0, 0)
+    resetPosition()
 
     skipToContentInit(document.getElementById('content'))
   }
