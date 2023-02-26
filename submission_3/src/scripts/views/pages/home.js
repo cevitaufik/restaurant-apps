@@ -1,4 +1,5 @@
 import DataSource from '../../data/data-source'
+import skipToContentInit from '../../utils/skip-to-content-helper'
 import Template from '../templates/template'
 
 const Home = {
@@ -35,6 +36,10 @@ const Home = {
     restaurants.forEach(restaurant => {
       container.insertAdjacentHTML('beforeend', Template.card(restaurant))
     })
+
+    window.scroll(0, 0)
+
+    skipToContentInit(document.getElementById('content'))
   }
 }
 

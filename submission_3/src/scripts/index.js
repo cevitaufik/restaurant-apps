@@ -23,11 +23,11 @@ window.addEventListener('load', () => {
   swRegister()
 })
 
-document
-  .getElementById('skip-link')
-  .addEventListener('click', e => {
-    const target = document.getElementById('content').getClientRects()
-    const navbar = document.querySelector('nav.navbar').getClientRects()
+// document
+//   .getElementById('skip-link')
+//   .addEventListener('click', e => {
+//     const target = document.getElementById('content').getClientRects()
+//     const navbar = document.querySelector('nav.navbar').getClientRects()
 
-    window.scroll(0, target[0].y - navbar[0].height)
-  })
+//     window.scroll(0, target[0].y - navbar[0].height)
+//   })

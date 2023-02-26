@@ -34,7 +34,7 @@ class Template {
   }
 
   static heading (name, sumary) {
-    return (sumary) ? `<h3 class="mt-10 mb-5">${name}</h3>` : `<h2 class="mt-10 mb-5">${name}</h2>`
+    return (sumary) ? `<h3 tabindex="0" class="mt-10 mb-5">${name}</h3>` : `<h2 tabindex="0" class="mt-10 mb-5">${name}</h2>`
   }
 
   static address (restaurant, sumary) {
